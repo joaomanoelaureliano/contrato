@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/img_icon_01.png">
+	<title>Contratos Web</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/feather-font/css/iconfont.css"/>
+</head>
+
+<body>
+	<header id="home">
+		<div ui-view>
+			<div class="bg-img" style="background-image: url('./img/img_2.jpg');">
+				<div class="overlay"></div>
+			</div>
+
+			<nav id="nav" class="navbar nav-transparent">
+				<div class="container">
+
+					<div class="navbar-header">
+						<div class="navbar-brand">
+							<a href="index.html">
+								<br>
+								<h5>Contratos Web<h5>
+							</a>
+						</div>
+						<div class="nav-collapse">
+							<span></span>
+						</div>
+					</div>
+		
+					<ul class="main-nav nav navbar-nav navbar-right">
+						<li><a href ui-sref="home">Início</a></li>
+
+						<li class="has-dropdown"><a href="">Cadastros</a>
+							<ul class="dropdown">
+								<li><a href ui-sref="sistema.cadastroContratos">Contratos</a></li>
+							</ul>
+						</li>
+						<li class="has-dropdown"><a href="">Relatórios de contratos</a>
+							<ul class="dropdown">
+								<li><a href="">Ativos</a></li>
+								<li><a href="">Cancelados</a></li>
+								<li><a href ui-sref="sistema.relatorioTodos">Todos</a></li>
+							</ul>
+						</li>					
+						<li><a href="">Sair</a></li>
+					</ul>	
+				</div>
+			</nav>
+
+			<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+
+					<div class="home-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1">
+								<div class="home-content">
+									<a href class="white-btn">Contratos Ativos</a>
+									<a href ui-sref="sistema.cadastroContratos" class="main-btn">Novo contrato </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
+	 <!-- <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+
+	<script src="js/popper.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <script src="js/angular-locale_pt-br.js"></script>
+    <script src="js/moment.js"></script>
+
+	<!-- <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script> -->
+	<script src="https://unpkg.com/sweetalert2@7.20.1/dist/sweetalert2.all.js"></script>
+	<script src="app/module.js"></script>
+	<script src="app/dialog.builder.service.js"></script>
+	<script src="app/contratos/form.controller.js"></script>
+	<script src="app/contratos/service.js"></script>
+	<script src="app/contratos/list.controller.js""></script>
+	<!-- <script>
+	feather.replace()
+	</script>   -->
+</body>
+</html>

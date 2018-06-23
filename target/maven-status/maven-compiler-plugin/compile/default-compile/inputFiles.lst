@@ -1,0 +1,13 @@
+C:\contrato\src\main\java\com\joaomanoel\contrato\utils\Producers.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\rest\JacksonConfig.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\rest\JaxRsActivator.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\utils\JpaCriteriaHelper.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\model\Contrato.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\services\ContratoService.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\model\Entidade.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\resources\ContratoResource.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\services\AbstractCrudService.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\utils\GenericDao.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\rest\AbstractCrudResource.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\rest\EntityNotFoundMapper.java
+C:\contrato\src\main\java\com\joaomanoel\contrato\rest\ConstraintViolationMapper.java

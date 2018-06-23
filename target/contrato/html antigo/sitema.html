@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/img_icon_01.png">
+	<title>Cadastro</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body ng-controller="ContratoFormController as vm">
+	<header>
+		
+   <nav id="nav" class="navbar">
+     <div class="container">
+
+      <div class="navbar-header">
+
+       <div class="navbar-brand">
+        <a href="index.html">
+          <br>
+          <h6>Contratos Web<h6>
+       </a>
+     </div>
+
+     <div class="nav-collapse">
+      <span></span>
+    </div>
+
+  </div>
+
+
+  <ul class="main-nav nav navbar-nav navbar-right">
+    <li><a href="index.html">Início</a></li>
+
+    <li class="has-dropdown"><a href="cadastro.html">Cadastros</a>
+      <ul class="dropdown">
+        <li><a href="cadastro.html">Contratos</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown"><a href="">Relatórios de contratos</a>
+      <ul class="dropdown">
+        <li><a href="">Ativos</a></li>
+        <li><a href="">Próximo ao vencimento</a></li>
+        <li><a href="">Cancelados</a></li>
+        <li><a href="relatorios-todos.html">Todos</a></li>
+      </ul>
+    </li>         
+    <li><a href="#">Sair</a></li>
+  </ul> 
+</div>
+</nav> 
+
+<div class="container">
+  <div class="pricing-header px-1 py-1 pt-md-2 pb-md-3 mx-auto text-center">
+    <h3 class="display-5">CADASTRO DE CONTRATO</h3>
+  </div>
+  <form>
+    <div class="form-row"  ng-controller="ContratoFormController as vm">
+      <div class="form-group col-md-6">
+        <label for="documento">Nº Contrato</label>
+        <input type="text" required ng-model="vm.registro.documento" class="form-control" id="documento" placeholder="Número do contrato">
+      </div>
+
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="fornecedor">Fornecedor</label>
+        <input type="text" required ng-model="vm.resgistro.fornecedor" class="form-control" id="fornecedor" placeholder="Nome do fornecedor">
+      </div>
+
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="servico">Tipo do serviço</label>
+        <input type="text" required ng-model="vm.registro.servico" class="form-control" id="servico" placeholder="Tipo do serviço prestado pelo fornecedor">
+      </div>
+
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="unidade">Selecione a unidade</label>
+        <select requeride ng-model="vm.registro.unidade" class="form-control" id="unidade">
+          <option></option>
+          <option>Matriz</option>
+          <option>Desenvolvimento</option>
+          <option>Filial Criciúma</option>
+          <option>Filial Palhoça</option>
+          <option>Filial Rio do Sul</option>
+          <option>Filial Chapecó</option>
+          <option>Filial Curitiba</option>
+          <option>Filial Caxias do Sul</option>
+          <option>Filial Uberlândia</option>
+          <option>Todas</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="diretoria">Diretoria</label>
+        <input type="text" required ng-model="vm.registro.diretoria" class="form-control" id="diretoria" placeholder="Diretoria responsável">
+      </div>
+
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="email">E-mail</label>
+        <input type="text" required ng-model="vm.registro.email" class="form-control" id="email" placeholder="nome@exemplo.com">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="indice">Índice de reajuste</label>
+        <input type="text" required ng-model="vm.registro.indice" class="form-control" id="indice" placeholder="Índice para reajuste de contrato">
+      </div>
+
+      <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+        <label for="reajuste">Mês de reajuste</label>
+        <select required ng-model="vm.registro.reajuste" class="form-control" id="reajuste">
+          <option></option>
+          <option>Janeiro</option>
+          <option>Fevereiro</option>
+          <option>Março</option>
+          <option>Abril</option>
+          <option>Maio</option>
+          <option>Junho</option>
+          <option>Julho</option>
+          <option>Agosto</option>
+          <option>Setembro</option>
+          <option>Outubro</option>
+          <option>Novembro</option>
+          <option>Dezembro</option>
+          <option>Sem reajuste</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+     <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+      <label for="dt_inicio">Data ínicio</label>
+      <input type="text" required ng-model="vm.registro.dt_inicio" class="form-control" id="dt_inicio" placeholder="Data ínicio do contrato">
+    </div>
+    <div class="form-group col-md-6"  ng-controller="ContratoFormController as vm">
+      <label for="dt_final">Data Final</label>
+      <input type="text" required ng-model="vm.registro.dt_final" class="form-control" id="dt_final" placeholder="Data final do contrato">
+    </div>
+  </div> 
+  <div class="form-row">
+   <div class="form-group col-md-12"  ng-controller="ContratoFormController as vm">
+    <label for="observacoes">Observações</label>
+    <input type="text" required ng-model="vm.registro.observacoes" class="form-control" id="observacoes" placeholder="Observações necessárias">
+    <br>
+    <button type="button" ng-click="vm.salvar()" class="sucess-btn">Salvar</button>   
+    <br><br><br><br><br>
+  </div>    
+
+</div>               
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/angular.js"></script>
+
+<script type="text/javascript" src="app/module.js"></script>
+<script type="text/javascript" src="app/contrato.form.controller.js"></script>
+<script type="text/javascript" src="app/contrato.list.controller.js"></script>
+<script type="text/javascript" src="app/contrato.service.js"></script>
+<script>
+ // feather.replace()
+</script>  
+
+</body>
+</html>
